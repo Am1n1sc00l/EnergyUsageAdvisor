@@ -54,9 +54,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Enter brand name of appliance(Ex. LG)"
             android:inputType="textPersonName"
-            android:text="Enter brand name of appliance(Ex. LG)"
             android:translationY="70dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter electricity used by appliance(watts)"
+            android:inputType="number"
+            android:translationY="70dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter monthly electricity cost(cost per watt)"
+            android:inputType="numberDecimal"
+            android:translationY="70dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:translationY="100dp" />
 
     </LinearLayout>
 
