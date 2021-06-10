@@ -1,0 +1,2 @@
+rootProject.name = "Energy Usage Advisor"
+include ':app'

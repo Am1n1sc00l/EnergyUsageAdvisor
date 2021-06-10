@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Energy Usage Advisor</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="textview">TextView</string>
+    <string name="brand_name_of_appliance_ex_lg">Brand name of Appliance(Ex. LG)</string>
+</resources>
