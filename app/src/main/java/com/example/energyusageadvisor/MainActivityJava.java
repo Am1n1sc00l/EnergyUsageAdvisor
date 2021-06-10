@@ -29,14 +29,31 @@ public class MainActivityJava extends AppCompatActivity {
     EditText editTextTextPersonName3;
     EditText editTextTextPersonName4;
 
-    Button submitButton;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        editTextTextPersonName2 = (EditText) findViewById(R.id.editTextTextPersonName2);
+        editTextTextPersonName3 = (EditText) findViewById(R.id.editTextTextPersonName3);
+        editTextTextPersonName4 = (EditText) findViewById(R.id.editTextTextPersonName4);
 
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                name = editTextTextPersonName2.getText().toString();
+                electricityNum = Integer.valueOf(editTextTextPersonName3.getText().toString());
+                costNum = Double.valueOf(editTextTextPersonName4.getText().toString());
+
+
+                showToast(name);
+                showToast(String.valueOf(electricityNum));
+                showToast(String.valueOf(costNum));
+            }
+        });
     }
 
     private void showToast(String text){
