@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter electricity used by appliance(watts)"
+            android:hint="Enter electricity used by appliance(kilojoules)"
             android:inputType="number"
             android:translationY="70dp" />
 
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter monthly electricity cost(cost per watt)"
+            android:hint="Enter monthly electricity cost(cost per kilojoule)"
             android:inputType="numberDecimal"
             android:translationY="70dp" />
 
