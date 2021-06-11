@@ -1,15 +1,35 @@
 package com.example.energyusageadvisor
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.energyusageadvisor.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
+import com.google.android.material.snackbar.Snackbar
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
+
 
 class MainActivity : AppCompatActivity() {
+
+    var name: String? = null
+    var electricityNum = 0
+    var costNum = 0.0
+
+    var editTextTextPersonName2: EditText? = null
+    var editTextTextPersonName3: EditText? = null
+    var editTextTextPersonName4: EditText? = null
+
+    var button: Button? = null
 
     private lateinit var binding: ActivityMainBinding
 
@@ -31,5 +51,22 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        editTextTextPersonName2 = findViewById<View>(R.id.editTextTextPersonName2) as EditText
+        editTextTextPersonName3 = findViewById<View>(R.id.editTextTextPersonName3) as EditText
+        editTextTextPersonName4 = findViewById<View>(R.id.editTextTextPersonName4) as EditText
+
+        button = findViewById<View>(R.id.button) as Button
+        button!!.setOnClickListener {
+            name = editTextTextPersonName2!!.text.toString()
+            electricityNum = Integer.valueOf(editTextTextPersonName3!!.text.toString())
+            costNum = java.lang.Double.valueOf(editTextTextPersonName4!!.text.toString())
+            showToast(name!!)
+            showToast(electricityNum.toString())
+            showToast(costNum.toString())
+        }
+    }
+    private fun showToast(text: String) {
+        Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
     }
 }
