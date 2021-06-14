@@ -83,6 +83,12 @@
             android:text="Submit"
             android:translationY="100dp" />
 
+        <TextView
+            android:id="@+id/calculationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="270dp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

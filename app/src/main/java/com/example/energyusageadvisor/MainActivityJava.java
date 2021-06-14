@@ -3,26 +3,18 @@ package com.example.energyusageadvisor;
 // This code was made with the help of this video: https://youtu.be/V0AETAjxqLI
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.energyusageadvisor.databinding.ActivityMainBinding;
 
 public class MainActivityJava extends AppCompatActivity {
 
     String name;
-    int electricityNum;
+    double electricityNum;
     double costNum;
 
     EditText editTextTextPersonName2;
@@ -45,7 +37,7 @@ public class MainActivityJava extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 name = editTextTextPersonName2.getText().toString();
-                electricityNum = Integer.valueOf(editTextTextPersonName3.getText().toString());
+                electricityNum = Double.valueOf(editTextTextPersonName3.getText().toString());
                 costNum = Double.valueOf(editTextTextPersonName4.getText().toString());
 
 
@@ -54,9 +46,12 @@ public class MainActivityJava extends AppCompatActivity {
                 showToast(String.valueOf(costNum));
             }
         });
+        TextView textView = (TextView) findViewById(R.id.calculationText);
+        textView.setText("Monthly electricity cost of appliance: ");
     }
 
     private void showToast(String text){
         Toast.makeText(MainActivityJava.this, text, Toast.LENGTH_SHORT).show();
     }
+
 }

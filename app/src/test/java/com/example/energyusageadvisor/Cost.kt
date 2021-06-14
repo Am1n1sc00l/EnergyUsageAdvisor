@@ -56,6 +56,7 @@ open class Cost : Electricity() {
             calculation = Math.round(calculation * 100.0) / 100.0
             //Method for rounding doubles found from: https://www.delftstack.com/howto/java/how-to-round-a-double-to-two-decimal-places-in-java/
             println("Since you are charged at a rate of $wattsToCost dollars per watt each month and this appliance uses $wattsAmount watts of electricity, you will be charged $$calculation on your next bill.")
+            return calculation;
             electricityCost = calculation
             readFile.close()
             `in`.close()
