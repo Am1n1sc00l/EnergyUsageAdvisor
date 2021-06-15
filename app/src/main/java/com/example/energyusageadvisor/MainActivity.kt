@@ -64,12 +64,12 @@ class MainActivity : AppCompatActivity() {
             showToast(electricityNum.toString())
             showToast(costNum.toString())
         }
-        val textView = findViewById<View>(R.id.calculationText) as TextView
-        textView.text = "Monthly electricity cost of appliance(kilojoules): $calculation"
 
         calculation = electricityNum * costNum // Fix this.
 
-        //textView.setText(calculation) This should update the text at the bottom of the screen in the app, fix this too.
+        val textView = findViewById<View>(R.id.calculationText) as TextView
+        textView.text = "Monthly electricity cost of appliance(kilojoules): $calculation"
+
     }
 
     private fun showToast(text: String) {

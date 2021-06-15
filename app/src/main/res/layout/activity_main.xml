@@ -49,6 +49,18 @@
             android:translationY="20dp"
             tools:text="Please input the following data:" />
 
+        <TextView
+            android:id="@+id/adviceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="@string/textview2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:translationX="140dp"
+            android:translationY="370dp"
+            tools:text="Advice on how to save electricity:" />
+
         <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="match_parent"
@@ -87,7 +99,32 @@
             android:id="@+id/calculationText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:translationY="270dp" />
+            android:translationX="35dp"
+            android:translationY="125dp" />
+
+        <TextView
+            android:id="@+id/advice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make sure to turn off lights and appliances when they aren't needed. Try to use natural light instead."
+            android:translationX="10dp"
+            android:translationY="177dp" />
+
+        <TextView
+            android:id="@+id/advice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Try to replace your regular lightbulbs with LED bulbs, as they conserve more energy and have a lower wattage than other light bulbs."
+            android:translationX="10dp"
+            android:translationY="177dp" />
+
+        <TextView
+            android:id="@+id/advice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Try to take shorter showers, as this will save the electricity needed to pump water."
+            android:translationX="10dp"
+            android:translationY="177dp" />
 
     </LinearLayout>
 

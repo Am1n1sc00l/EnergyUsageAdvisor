@@ -4,5 +4,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="textview">Please input the following data:</string>
+    <string name="textview2">Advice on how to save electricity:</string>
     <string name="brand_name_of_appliance_ex_lg">Brand name of Appliance(Ex. LG)</string>
 </resources>
