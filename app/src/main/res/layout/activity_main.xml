@@ -99,7 +99,7 @@
             android:id="@+id/calculationText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:translationX="35dp"
+            android:translationX="30dp"
             android:translationY="125dp" />
 
         <TextView

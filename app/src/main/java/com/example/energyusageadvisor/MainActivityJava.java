@@ -54,4 +54,7 @@ public class MainActivityJava extends AppCompatActivity {
         Toast.makeText(MainActivityJava.this, text, Toast.LENGTH_SHORT).show();
     }
 
+
+
+
 }

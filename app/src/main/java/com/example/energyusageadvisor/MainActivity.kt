@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             showToast(costNum.toString())
         }
 
-        calculation = electricityNum * costNum // Fix this.
+        calculation = electricityNum // Fix this.
 
         val textView = findViewById<View>(R.id.calculationText) as TextView
         textView.text = "Monthly electricity cost of appliance(kilojoules): $$calculation"
