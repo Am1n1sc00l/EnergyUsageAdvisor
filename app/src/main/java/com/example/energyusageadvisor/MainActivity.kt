@@ -120,6 +120,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * This function creates a toast/visual pop-up of each String file inputted into it.
+     *
+     * @param text String variable containing user input data.
+     * @return Toast/display based on the text variable.
+     */
     private fun showToast(text: String) {
         Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
     }
