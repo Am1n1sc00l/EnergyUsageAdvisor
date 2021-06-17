@@ -15,21 +15,63 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.energyusageadvisor.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
+/**
+ * The main class of the program. It initializes the android, and runs all of the code required to
+ * make the app function.
+ *
+ * @author Jimmy Le, Askari Abbas, Amin Khatatbeh
+ * @since 1.0
+ */
 class MainActivity : AppCompatActivity() {
 
+    /**
+     * name is a String variable which is used to store the value of the specified appliance's brand name.
+     * It is initially set to a null value, to be later redefined by the user through user input.
+     */
     var name: String? = null
+
+    /**
+     * electricityNum is a double variable that is used to store the amount of kilojoules that the user's specified appliance uses.
+     * It is initially set to 0.0 kJ, but is later redefined in the program through user input.
+     */
     var electricityNum = 0.0
+
+    /**
+     * costNum is a double variable that is used to store the cost, in dollars per kilojoule, that the user's specified appliance
+     * takes to run over the time span of a month. The value is initially set to 0.0 dollars/kJ, but is later redefined in the program
+     * through user input.
+     */
     var costNum = 0.0
+
+    /**
+     * calculation is a double variable that is used to store the final monthly electrical cost of the user's specified appliance.
+     * It is initially set to a value of 0.0, but is then updated with a new value after calculations are done within the code regarding
+     * various other inputs the user has made.
+     */
     var calculation = 0.0
+
+    /**
+     * This variable has the exact same purpose and function as the electricityNum variable. Though this new one had to be created in order
+     * to fix a bug that was making it so our calculations were not being completed properly.
+     */
     var eNumVal = 0.0
+
+    /**
+     * This variable has the exact same purpose and function as the costNum variable. Though this new one had to be created in order
+     * to fix a bug that was making it so our calculations were not being completed properly.
+     */
     var costNumVal = 0.0
 
-
+    /**
+     * These three variables are used to initialize the three text boxes that users will input information relating to their appliance.
+     */
     var editTextTextPersonName2: EditText? = null
     var editTextTextPersonName3: EditText? = null
     var editTextTextPersonName4: EditText? = null
 
+    /**
+     * This variable initialized the "Submit" button that users must press after inputting the relevant data in the previously mentioned text boxes.
+     */
     var button: Button? = null
 
     private lateinit var binding: ActivityMainBinding
