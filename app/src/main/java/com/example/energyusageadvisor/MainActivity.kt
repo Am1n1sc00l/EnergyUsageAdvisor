@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
     var electricityNum = 0.0
     var costNum = 0.0
     var calculation = 0.0
+    var eNumVal = 0.0
+    var costNumVal = 0.0
+
 
     var editTextTextPersonName2: EditText? = null
     var editTextTextPersonName3: EditText? = null
@@ -63,12 +66,15 @@ class MainActivity : AppCompatActivity() {
             showToast(name!!)
             showToast(electricityNum.toString())
             showToast(costNum.toString())
+            eNumVal = electricityNum
+            costNumVal = costNum
+
+            calculation = eNumVal * costNumVal
+
+            val textView = findViewById<View>(R.id.calculationText) as TextView
+            textView.text = "Monthly electricity cost of appliance(dollars): $$calculation"
+
         }
-
-        calculation = electricityNum // Fix this.
-
-        val textView = findViewById<View>(R.id.calculationText) as TextView
-        textView.text = "Monthly electricity cost of appliance(kilojoules): $$calculation"
 
     }
 
