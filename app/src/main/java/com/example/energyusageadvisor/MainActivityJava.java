@@ -20,14 +20,35 @@ import android.widget.Toast;
  */
 public class MainActivityJava extends AppCompatActivity {
 
+    /**
+     * name is a String variable which is used to store the value of the specified appliance's brand name.
+     * It is initially set to a null value, to be later redefined by the user through user input.
+     */
     String name;
+
+    /**
+     * electricityNum is a double variable that is used to store the amount of kilojoules that the user's specified appliance uses.
+     * It is initially set to 0.0 kJ, but is later redefined in the program through user input.
+     */
     double electricityNum;
+
+    /**
+     * costNum is a double variable that is used to store the cost, in dollars per kilojoule, that the user's specified appliance
+     * takes to run over the time span of a month. The value is initially set to 0.0 dollars/kJ, but is later redefined in the program
+     * through user input.
+     */
     double costNum;
 
+    /**
+     * These three variables are used to initialize the three text boxes that users will input information relating to their appliance.
+     */
     EditText editTextTextPersonName2;
     EditText editTextTextPersonName3;
     EditText editTextTextPersonName4;
 
+    /**
+     * This variable initialized the "Submit" button that users must press after inputting the relevant data in the previously mentioned text boxes.
+     */
     Button button;
 
     @Override
@@ -57,6 +78,12 @@ public class MainActivityJava extends AppCompatActivity {
         textView.setText("Monthly electricity cost of appliance: ");
     }
 
+    /**
+     * This function creates a toast/visual pop-up of each String file inputted into it.
+     *
+     * @param text String variable containing user input data.
+     * @return Toast/display based on the text variable.
+     */
     private void showToast(String text){
         Toast.makeText(MainActivityJava.this, text, Toast.LENGTH_SHORT).show();
     }

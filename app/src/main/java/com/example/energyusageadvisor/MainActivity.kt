@@ -1,6 +1,7 @@
 package com.example.energyusageadvisor
 
 // This code was made with the help of this video: https://youtu.be/V0AETAjxqLI
+// App icon photo taken by Oliver Cleve for Getty Images.
 
 import android.annotation.SuppressLint
 import android.os.Bundle
