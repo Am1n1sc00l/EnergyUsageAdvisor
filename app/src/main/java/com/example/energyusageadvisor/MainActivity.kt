@@ -1,5 +1,7 @@
 package com.example.energyusageadvisor
 
+// This code was made with the help of this video: https://youtu.be/V0AETAjxqLI
+
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
@@ -83,7 +85,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         // Passing each menu ID as a set of Ids because each
@@ -94,7 +95,6 @@ class MainActivity : AppCompatActivity() {
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
 
         editTextTextPersonName2 = findViewById<View>(R.id.editTextTextPersonName2) as EditText
         editTextTextPersonName3 = findViewById<View>(R.id.editTextTextPersonName3) as EditText
