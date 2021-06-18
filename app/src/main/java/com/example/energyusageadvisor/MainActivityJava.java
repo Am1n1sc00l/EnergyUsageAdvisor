@@ -11,6 +11,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * The main class of the program. It initializes the android, and runs all of the code required to
+ * make the app function.
+ *
+ * @author Jimmy Le, Askari Abbas, Amin Khatatbeh
+ * @since 1.0
+ */
 public class MainActivityJava extends AppCompatActivity {
 
     String name;
