@@ -1,4 +1,4 @@
-package com.example.energyusageadvisor.ui.home
+package com.amin.energyusageadvisor.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

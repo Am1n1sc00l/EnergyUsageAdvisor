@@ -1,6 +1,4 @@
-package com.example.energyusageadvisor
-
-import org.junit.Test
+package com.amin.energyusageadvisor
 
 import org.junit.Assert.*
 

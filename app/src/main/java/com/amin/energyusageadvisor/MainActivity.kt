@@ -1,4 +1,4 @@
-package com.example.energyusageadvisor
+package com.amin.energyusageadvisor
 
 // This code was made with the help of this video: https://youtu.be/V0AETAjxqLI
 // App icon photo taken by Oliver Cleve for Getty Images.
@@ -14,9 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.energyusageadvisor.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.amin.energyusageadvisor.databinding.ActivityMainBinding
 
 /**
  * The main class of the program. It initializes the android, and runs all of the code required to

@@ -1,8 +1,4 @@
-package com.example.energyusageadvisor
-
-import org.junit.Test
-
-import org.junit.Assert.*
+package com.amin.energyusageadvisor
 
 //This program will be used to run the project.
 

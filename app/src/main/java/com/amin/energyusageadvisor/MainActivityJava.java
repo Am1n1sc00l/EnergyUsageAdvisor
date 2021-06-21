@@ -1,4 +1,4 @@
-package com.example.energyusageadvisor;
+package com.amin.energyusageadvisor;
 
 // This code was made with the help of this video: https://youtu.be/V0AETAjxqLI
 import android.os.Bundle;

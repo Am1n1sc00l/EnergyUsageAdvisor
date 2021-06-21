@@ -1,4 +1,4 @@
-package com.example.energyusageadvisor
+package com.amin.energyusageadvisor
 
 import java.io.BufferedReader
 import java.io.FileReader

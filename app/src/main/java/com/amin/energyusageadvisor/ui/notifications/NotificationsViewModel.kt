@@ -1,4 +1,4 @@
-package com.example.energyusageadvisor.ui.notifications
+package com.amin.energyusageadvisor.ui.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
